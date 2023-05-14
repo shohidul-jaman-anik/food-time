@@ -8,7 +8,7 @@ body {
 }
 /*--------------------------------------------------
                   Header Section 
-  ----------------------------------------------------*/
+----------------------------------------------------*/
 
 .navContainer {
   /* background-image: linear-gradient(to right, #0f1511, #15282b); */
@@ -17,7 +17,7 @@ body {
 }
 
 .navLink {
-  padding-left: 40px;
+  padding-left: 70px !important;
   color: #3f3f3f;
   font-family: "Poppins";
   font-style: normal;
@@ -28,7 +28,7 @@ body {
 
 /* mouse over link */
 .navLink:hover {
-  color: #0dc8de;
+  color: #396c03;
 }
 
 .loginBtn {
@@ -52,6 +52,21 @@ body {
   border-radius: 48px !important;
   border: 2px solid #0dc8de;
   background-color: #0dc8de !important;
+}
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navEndCompo {
+  display: flex;
+  align-items: center;
+}
+.login {
+  padding: 12px 50px;
+  background-color: #396c03;
+  border-radius: 225px;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -77,6 +92,15 @@ body {
 
   .navLink {
     padding-left: 10px;
+  }
+  .navEndCompo {
+    flex-direction: column;
+  }
+  .login {
+    padding: 2px 25px;
+  }
+  .checkout{
+    width: 32px;
   }
 }
 
@@ -111,7 +135,7 @@ body {
   }
 
   .navLink {
-    padding-left: 10px;
+    padding-left: 40px;
   }
 }
 
@@ -125,7 +149,7 @@ body {
   }
 
   .navLink {
-    padding-left: 25px;
+    padding-left: 50px;
     line-height: 18px;
   }
 
@@ -157,7 +181,6 @@ body {
   font-family: "Merienda";
   font-weight: 700;
   font-size: 65px;
-  /* line-height: 70px; */
   padding-top: 30px;
   line-height: 130% !important;
 }
@@ -196,11 +219,14 @@ body {
   top: 10%;
   left: 10%;
   right: 0;
+  z-index: 2;
 }
+
 .subscribe {
   display: flex;
   justify-content: center;
 }
+
 .subscribe > h1 {
   color: #ff8b00;
   font-family: "Poppins";
@@ -218,7 +244,6 @@ body {
 @media only screen and (max-width: 600px) {
   .bannerContainer {
     padding: 0px 10px !important;
-    padding-bottom: 17% !important;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
