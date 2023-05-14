@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <!-- Daisi Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="flex justify-between items-center  navContainer ">
+        <div class=" navbar">
+            <div class="logo">
+                <img src="./Asset/logo.svg" alt="" />
+            </div>
+            <div>
+                <div class="dropdown dropdown-start flex ">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white " fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-14 p-2 shadow  rounded-box w-52 ">
+                        <li><a href="#banner" class="active:bg-white navLink">Home</a></li>
+                        <li><a href="#services" class="active:bg-white navLink">Blog</a></li>
+                        <li><a href="#features" class="active:bg-white navLink">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="navContent  navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-white">
+                <li><a href="#banner" class="active:bg-black navLink">Home</a></li>
+                <li><a href="#services" class="active:bg-black navLink">Blog</a></li>
+                <li><a href="#features" class="active:bg-black navLink">About</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!----------- Banner ------------->
+    <div id="banner" class="bannerContainer ">
+        <!--Left Col-->
+        <div class="text-white">
+            <h1 class="BannerHeading">Order food online from your favourite local restaurants</h1>
+            <p class="bannerContent leading-normal">
+                Freshly made food delivered to your door.
+            </p>
+            <div class="">
+                <div class="relative w-full sm:max-w-2xl sm:mx-auto">
+                    <div class="overflow-hidden z-0 rounded-full relative p-3">
+                        <form role="form" class="relative flex z-50 bg-white rounded-full">
+                            <input type="text" placeholder="enter your search here"
+                                class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none">
+                            <button
+                                class="searchBtn">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Right Col-->
+        <div class="rightCol">
+            <div class=" bannerImg">
+                <img src="./Asset/Group 8.svg" alt="" />
+                <div class="subscribeSection">
+                    <div class="subscribe">
+                        <img src="./Asset/Vector.svg" alt="" srcset="">
+                        <h1>200k+</h1>
+                    </div>
+                    <p>People Delivered</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Daisy Ui -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./Js/app.js"></script>
+</body>
+
+</html>
