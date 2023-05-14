@@ -63,10 +63,14 @@ body {
   align-items: center;
 }
 .login {
-  padding: 12px 50px;
+  padding: 8px 40px;
   background-color: #396c03;
   border-radius: 225px;
   color: white;
+}
+.checkout{
+  width: 52px;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -347,4 +351,75 @@ body {
     font-size: 24px;
     line-height: 32px;
   }
+}
+
+
+
+
+
+
+
+/*  */
+
+
+/* Second Part */
+.food-title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Merienda';
+  line-height: 65px;
+}
+
+.right-bg {
+  background-image: url('./Asset/back.png');
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: moveBackground 4s linear infinite;
+  width:751px;
+  height: 500.67px;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
+#cycle {
+  position: relative;
+  width: 656.79px;
+  height: 437.91px;
+  background-image: url('./Asset/cycle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: moveCycle 4s ease-in infinite;
+}
+
+@keyframes moveCycle {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 110px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
+
+}
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+
+}
+@media only screen and (min-device-width: 1035px) and (max-device-width: 1480px) {
+
 }
