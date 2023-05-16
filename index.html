@@ -46,17 +46,20 @@
                             <p class="login"> Login</p>
                             <img src="./Asset/Group 9.svg" class="checkout" alt="">
                         </div>
+
+
                     </ul>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="navContent hidden lg:flex ">
-            <ul class=" menu-horizontal  px-1 text-white">
+            <ul class=" menu-horizontal  px-1 pr-32">
                 <li><a href="#banner" class=" navLink">Home</a></li>
                 <li><a href="#services" class=" navLink">Blog</a></li>
                 <li><a href="#features" class=" navLink">About</a></li>
+
             </ul>
 
 
@@ -81,9 +84,16 @@
                 <div class="relative w-full sm:max-w-2xl sm:mx-auto">
                     <div class="overflow-hidden z-0 rounded-full relative p-3">
                         <form role="form" class="relative flex z-50 bg-white rounded-full">
-                            <input type="text" placeholder="enter your search here"
+                            <div class="h-10 w-10 bg-[#FF8B00] rounded-full mt-2 ml-2"></div>
+                            <input type="text" placeholder="Enter your location"
                                 class="rounded-full flex-1 pl-3 py-4 text-gray-700 focus:outline-none">
-                            <button class="searchBtn">Search</button>
+                            <button class="searchBtn">
+                                <span class="inline-flex"><svg aria-hidden="true" class="mr-2 -ml-1 w-5 h-5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg></span>
+                                Search</button>
                         </form>
                     </div>
                 </div>
@@ -93,21 +103,26 @@
         <!--Right Col-->
         <div class="rightCol">
             <div>
-                <img src="./Asset/Group 8.svg" class=" bannerImg" alt="" />
+                <img class="plate1-img h-[200px] w-[201.14px] absolute" src="./Asset/plate1.png" alt="">
+                <div>
+                    <img src="./Asset/Group 8.svg" class=" bannerImg" alt="" />
 
-                <div class="subscribeSection">
-                    <div class="subscribe">
-                        <img src="./Asset/Vector.svg" alt="" srcset="">
-                        <h1>200k+</h1>
+                    <div class="subscribeSection">
+                        <div class="subscribe">
+                            <img src="./Asset/Vector.svg" alt="" srcset="">
+                            <h1>200k+</h1>
+                        </div>
+                        <p>People Delivered</p>
                     </div>
-                    <p>People Delivered</p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="bg-white relative flex flex-col-reverse lg:pt-0 lg:flex-col lg:pb-0 justify-center item">
+
+    <!-- Cycle Section Start -->
+    <div class="bg-white relative flex flex-col-reverse lg:pt-0 lg:flex-col lg:pb-0 justify-center cycleContainer">
         <div
             class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-6/12 lg:max-w-full lg:absolute xl:px-0 flex justify-start items-center right-bg">
             <div id="cycle"></div>
@@ -131,6 +146,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Daisy Ui -->
     <script src="https://cdn.tailwindcss.com"></script>
